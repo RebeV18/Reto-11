@@ -1,0 +1,145 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Monserrat";
+}
+
+/* header{
+    position: relative;
+    background-image: url(https://america-retail.com/wp-content/uploads/2024/02/latam-aerolinea-e1713313853283.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+} */
+
+h1 {
+  padding: 120px;
+  margin: 0px;
+  text-align: center;
+  font-size: 3.1rem;
+  color: #001764;
+  text-shadow: 2px 2px 10px fuchsia;
+}
+
+ul {
+  margin: 0px;
+  padding: 15px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 10px;
+  background-color: #66fefe;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgb(143, 180, 187);
+  background-color: #ccf8fd;
+  border-radius: 5px;
+}
+
+.principal {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.principal article {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+
+  h1 {
+    padding: 80;
+    font-size: 2.5rem;
+  }
+
+  h1::before {
+    font-size: 2rem;
+  }
+
+  .avion {
+    background-color: #001764;
+    background-image: url(https://static.dw.com/image/37163032_605.webp);
+    background-position: center;
+    background-size: 100%;
+    padding: 30px;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .avion {
+    background-color: #001764;
+    background-image: url(https://static.dw.com/image/37163032_605.webp);
+    background-position: center;
+    background-size: 100%;
+    padding-top: 100px;
+    padding: 30px;
+  }
+
+  nav {
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
