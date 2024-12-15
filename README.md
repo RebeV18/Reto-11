@@ -1,4 +1,4 @@
-# Reto de la semana
+# Reto 
 
 Crea un contenedor principal que ocupe toda la pantalla y divídela en dos secciones: una para la navegación y otra para el contenido principal.
 
